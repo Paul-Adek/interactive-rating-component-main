@@ -1,0 +1,200 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: hsl(216, 12%, 8%);
+  font-size: 12px;
+  font-family: 'Overpass', sans-serif;
+  color: white;
+}
+p {
+  font-size: 13px;
+  color: hsl(217, 12%, 63%);
+}
+.container-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: hsl(214, 19%, 15%);
+  padding: 60px 20px;
+  width: 23%;
+  height: 30%;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+.image-one {
+  margin-top: -30px;
+  background: hsl(213, 19%, 18%);
+  width: 1%;
+  height: 7%;
+  padding: 18px;
+  border-radius: 80%;
+  background-position: center;
+  background-image: url(images/icon-star.svg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+.text {
+  padding: 0px 10px;
+}
+.radio-box {
+  display: inline-block;
+  position: relative;
+  width: 49.5px;
+  height: 35px;
+  background-color: transparent;
+  margin-top: 15px;
+  margin-left: 7px;
+}
+.radio {
+  display: inline;
+  position: absolute;
+  cursor: pointer;
+  top: 13px;
+  left: 0px;
+  width: 75%;
+  height: 93%;
+  margin-top: 0px;
+  background-color: transparent;
+  text-align: center;
+}
+.num {
+  margin-top: 7px;
+  color: white;
+}
+input[type="radio"] {
+  visibility: hidden;
+  position: absolute;
+}
+
+.radiomark {
+  position: absolute;
+  border: solid 2px hsl(213, 19%, 18%);
+  height: 35px;
+  width: 35px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 100%;
+  font-size: 12px;
+}
+.radiomark::before {
+  position: absolute;
+  content: "";
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  margin: -2px 0px 0px -1px;
+  color: white;
+}
+input[type="radio"]:checked + .radiomark::before {
+  background-color: hsl(217, 12%, 63%);
+  border: solid 2px hsl(217, 12%, 63%);
+}
+input[type="radio"]:hover + .radiomark::before {
+  background-color: hsl(25, 97%, 53%);
+  border: solid 2px hsl(25, 97%, 53%);
+}
+#label-5 {
+  margin-top: 1px;
+}
+#val {
+  color: white;
+}
+#submitButton {
+  width: 100%;
+  margin-top: 30px;
+  background: hsl(25, 97%, 53%);
+  outline: none;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+#submitButton:hover {
+  background: white;
+  color: hsl(25, 97%, 53%);
+}
+.container-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(214, 19%, 15%);
+  padding: 60px 20px;
+  width: 23%;
+  height: 30%;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+#result {
+  font-size: 12px;
+  color: hsl(25, 97%, 53%);
+  background: hsl(213, 19%, 18%);
+  padding: 5px 12px;
+  width: 50%;
+  border-radius: 20px;
+}
+.image-two {
+  background-image: url(images/illustration-thank-you.svg);
+  width: 45%;
+  background-repeat: no-repeat;
+  height: 120%;
+  background-size: 100%;
+  margin-left: 25%;
+  margin-top: -20px;
+}
+#thank {
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+#rate-nums {
+  display: none;
+}
+.text-two p {
+  margin-bottom: -30px;
+  padding: 5px;
+}
+.attribution {
+  font-size: 15px;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(25, 97%, 53%);
+}
+@media only screen and (max-width: 400px) {
+  .container-one {
+    width: 250px;
+    height: 220px;
+  }
+  .radio-box {
+    width: 40px;
+    height: 25px;
+    margin-left: 7px;
+  }
+  .radio {
+    left: 4px;
+  }
+  .attribution {
+    font-size: 13px;
+    text-align: center;
+  }
+  .container-two {
+    width: 250px;
+    height: 200px;
+  }
+  .text-two p {
+    margin-bottom: -35px;
+    padding: 0px;
+  }
+}
